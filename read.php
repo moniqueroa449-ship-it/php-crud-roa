@@ -2,7 +2,7 @@
 require_once 'db.php';
 
 try {
-    $stmt = $pdo->query("SELECT * FROM students ORDER BY date_added DESC");
+    $stmt = $pdo->query("SELECT * FROM students ORDER BY id ASC");
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Error fetching records: " . $e->getMessage());
@@ -22,7 +22,11 @@ try {
 
 <div class="records read">
     <h2>Student Records</h2>
-    <a href="create.php" class="create-record">Create Record</a>
+    
+    <div class="top-buttons">
+        <a href="create.php" class="create-record">Create Record</a>
+        <a href="index.php" class="back-home"> Back to Homepage</a>
+    </div>
 
     <?php if (count($records) > 0): ?>
         <table>
