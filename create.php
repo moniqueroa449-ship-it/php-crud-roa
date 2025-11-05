@@ -35,6 +35,7 @@
         <input type="submit" value="Add Student">
 
         <a href="read.php" class="see-records">See Records</a>
+        <a href="index.php" class="homepage">Back to Homepage</a>
     </form>
 
 <?php
