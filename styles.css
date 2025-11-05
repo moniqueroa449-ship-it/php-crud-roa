@@ -126,3 +126,42 @@ p {
     margin-top: 15px;
     font-size: 14px;
 }
+
+.warning-box {
+    max-width: 450px;
+    margin: 40px auto;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.warning-text {
+    color: #856404;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.student-name {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}

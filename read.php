@@ -54,7 +54,7 @@ try {
                         <td><?= htmlspecialchars($record['date_added']) ?></td>
                         <td class="actions">
                             <a href="update.php?id=<?= $record['id'] ?>">Edit</a>
-                            <a href="delete.php?id=<?= $record['id'] ?>" onclick="return confirm('Are you sure you want to delete this record?');"> Delete</a>
+                            <a href="delete.php?id=<?= $record['id'] ?>">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
